@@ -19,7 +19,7 @@ $( document ).ready(function () {
    *******************************************************/
   $.ajax({
     type: 'GET',
-    url: 'http://0.0.0.0:5001/api/v1/status/',
+    url: 'http://localhost:5001/api/v1/status/',
     dataType: 'json',
     success: function (data) {
       if (data.status === 'OK') {
